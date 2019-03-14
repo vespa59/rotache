@@ -1,0 +1,53 @@
+// Colors
+$green: rgb(30, 215, 96);
+$light-black: rgb(40, 40, 40);
+$black: rgb(24, 24, 24);
+$grey: rgb(170, 170, 170);
+$sand: rgb(200, 200, 200);
+$white: rgb(255, 255, 255);
+$blue: #4688d7;
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+body {
+    background: $black;
+    color: $white;
+}
+
+.btn-primary {
+    background-color: $green;
+    border-color: $green;
+
+    &:hover {
+        background-color: $blue;
+        border-color: $blue;
+    }
+}
+
+.spotify-button-container {
+    display: flex;
+    flex-direction: column;
+    .btn {
+        margin:40px auto;
+    }
+}
+
+.list-group-item {
+    background-color: $black;
+    border-color: $grey;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.playlist-thumbnail {
+    height: 80px;
+}

@@ -1,12 +1,13 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 const SpotifyButton = props => {
     return (
-        <div>
+        <div className="spotify-button-container text-center">
             {
                 props.headerMessage || null
             }
-            <button onClick={props.connectToSpotify}>Connect to Spotify</button>
+            <Button onClick={props.connectToSpotify}>Connect to Spotify</Button>
         </div>
     );
 };
